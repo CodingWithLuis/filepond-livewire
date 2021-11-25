@@ -11,7 +11,9 @@
         "laravel/breeze": "^1.4",
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.8",
+        "rawilk/laravel-form-components": "^6.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

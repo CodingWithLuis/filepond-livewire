@@ -19,5 +19,9 @@
         "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
         "tailwindcss": "^2.0.2"
+    },
+    "dependencies": {
+        "filepond": "^4.30.3",
+        "filepond-plugin-image-preview": "^4.6.10"
     }
 }

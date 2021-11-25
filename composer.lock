@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "149a072fbdb9d5346acae9f7b5d32f41",
+    "content-hash": "07343a46e3b09d7cefb71ce0979cc2bf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1722,6 +1722,78 @@
             "time": "2021-09-25T08:23:19+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "fc8c315babf8d42c2a25f207b3931b1bc8eb5e70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/fc8c315babf8d42c2a25f207b3931b1bc8eb5e70",
+                "reference": "fc8c315babf8d42c2a25f207b3931b1bc8eb5e70",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0",
+                "illuminate/support": "^7.0|^8.0",
+                "illuminate/validation": "^7.0|^8.0",
+                "php": "^7.2.5|^8.0",
+                "symfony/http-kernel": "^5.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^7.0|^8.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^5.0|^6.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v2.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-24T04:33:15+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.3.5",
             "source": {
@@ -2906,6 +2978,91 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "rawilk/laravel-form-components",
+            "version": "v6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rawilk/laravel-form-components.git",
+                "reference": "957cae92ee7c3a2bf380cf956a59dbd16f298fbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rawilk/laravel-form-components/zipball/957cae92ee7c3a2bf380cf956a59dbd16f298fbf",
+                "reference": "957cae92ee7c3a2bf380cf956a59dbd16f298fbf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.56",
+                "illuminate/support": "^8.56",
+                "illuminate/view": "^8.56",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "blade-ui-kit/blade-heroicons": "^1.2",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "orchestra/testbench": "^6.21",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-laravel": "^1.5",
+                "spatie/laravel-ray": "^1.25",
+                "spatie/phpunit-snapshot-assertions": "^4.2",
+                "vimeo/psalm": "^4.8"
+            },
+            "suggest": {
+                "blade-ui-kit/blade-heroicons": "Required for the default icons used in this package",
+                "livewire/livewire": "Consider livewire for handling your form submissions"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rawilk\\FormComponents\\FormComponentsServiceProvider"
+                    ],
+                    "aliases": {
+                        "FormComponents": "Rawilk\\FormComponents\\Facades\\FormComponents"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rawilk\\FormComponents\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Randall Wilk",
+                    "email": "randall@randallwilk.dev",
+                    "homepage": "https://randallwilk.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Set of Blade components for TailwindCSS forms.",
+            "homepage": "https://github.com/rawilk/laravel-form-components",
+            "keywords": [
+                "blade",
+                "date picker",
+                "form",
+                "laravel",
+                "laravel-form-components",
+                "rawilk",
+                "tailwind"
+            ],
+            "support": {
+                "issues": "https://github.com/rawilk/laravel-form-components/issues",
+                "source": "https://github.com/rawilk/laravel-form-components/tree/v6.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/rawilk",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-11T21:16:55+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
