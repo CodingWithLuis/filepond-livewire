@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <!-- Scripts -->
+
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+
     <script src="{{ mix('js/app.js') }}" defer></script>
+
     @livewireStyles
     @fcStyles
 </head>
@@ -38,6 +43,12 @@
     </div>
     @livewireScripts
     @fcScripts
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            FilePond.registerPlugin(FilePondPluginImagePreview);
+        });
+    </script>
 </body>
 
 </html>
